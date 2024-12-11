@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: orange;
+    text-decoration: underline;
+}
+/* advance selectors-attribute,child,sibling */
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    font-size: 17px
+}
+ul >li{
+    font-weight: bolder;
+    color: aqua;
+}
+/*Pseudo classes*/
+ul li:hover{
+    color: red;
+    background-color: blue;
+    border-radius: 9px;
+}
+/*nth child*/
+ul li:nth-child(5){
+    color: gray;
+}
+/*not- styles everything expect the thing you have chosen*/
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/*Pseudo elements- modify html element, add content before and after the element, Modify a part of the element(increase the size of the 1st letter in the paragraph) */
+ul li::before{
+    content: "😒";
+}
+a::after{
+    content: "*";
+}
+p::first-letter{
+    font-size: 200%;
+    color: red;
+}
